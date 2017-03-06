@@ -1,0 +1,76 @@
+
+/* == DEMO PAGE STYLING == */
+
+body {
+  background: rgb(0,0,0);
+  font-family: 'Helvetica Neue', 'Segoe UI', sans-serif;
+}
+
+h1 {
+  color: rgb(255,255,255);
+}
+
+/* == END == */
+
+
+/* Hover */
+
+.icon {
+  width: 30px;
+}
+
+.icon a {
+  width: 100%;
+  height: 3px;
+  background: rgb(255,255,255);
+  display: block;
+  margin-bottom: 6px;
+  transition: all 0.25s ease-out;
+}
+
+.icon:hover a:nth-child(1) {
+  transform: rotate(45deg) translate(6.5px, 6px);
+}
+
+.icon:hover a:nth-child(2) {
+  opacity: 0;
+}
+
+.icon:hover a:nth-child(3) {
+  transform: rotate(-45deg) translate(6.5px, -6.5px);
+}
+
+
+/* On click */
+
+input#menu {
+  display: none;
+}
+
+.icon2 {
+  width: 30px;
+  display: inline-block;
+}
+
+.icon2 a {
+  width: 100%;
+  height: 3px;
+  background: rgb(255,255,255);
+  display: block;
+  margin-bottom: 6px;
+  transition: all 0.25s ease-out;
+}
+
+input#menu:checked + .icon2 a:nth-child(1) {
+  transform: rotate(45deg) translate(6.5px, 6px);
+}
+
+input#menu:checked + .icon2 a:nth-child(2) {
+  opacity: 0;
+}
+
+input#menu:checked + .icon2 a:nth-child(3) {
+  transform: rotate(-45deg) translate(6.5px, -6.5px);
+}
+
+
